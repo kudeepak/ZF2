@@ -1,0 +1,132 @@
+2016-10-21T13:58:39+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/index/index.phtml line 4
+
+2016-10-21T14:00:22+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:15:23+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:15:27+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:18:58+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:19:37+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:19:38+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:19:39+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:20:31+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:20:40+05:30
+                    ERR (3): Call to a member function prepare() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 7
+
+2016-10-21T14:22:41+05:30
+                    NOTICE (5): Undefined variable: form
+
+2016-10-21T14:22:41+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:29:51+05:30
+                    NOTICE (5): Undefined variable: form
+
+2016-10-21T14:29:51+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:30:42+05:30
+                    NOTICE (5): Undefined variable: form
+
+2016-10-21T14:30:42+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:36:59+05:30
+                    NOTICE (5): Undefined variable: form
+
+2016-10-21T14:36:59+05:30
+                    ERR (3): Call to a member function setAttribute() on a non-object in /var/www/zf2app/module/Login/view/login/auth/index.phtml line 4
+
+2016-10-21T14:39:08+05:30
+                    ERR (3): Class 'Login\Model\AuthStorage' not found in /var/www/zf2app/module/Login/Module.php line 49
+
+2016-10-21T14:41:30+05:30
+                    ERR (3): Class 'Login\Login\Model\AuthStorage' not found in /var/www/zf2app/module/Login/Module.php line 50
+
+2016-10-21T14:41:39+05:30
+                    ERR (3): Class 'Doctrine\Common\Annotations\AnnotationRegistry' not found in /var/www/zf2app/vendor/zendframework/zendframework/library/Zend/Code/Annotation/Parser/DoctrineAnnotationParser.php line 42
+
+2016-10-21T15:04:08+05:30
+                    ERR (3): Class 'Login\Model\Login' not found in /var/www/zf2app/module/Login/src/Login/Controller/AuthController.php line 47
+
+2016-10-21T15:33:55+05:30
+                    ERR (3): Zend\View\Renderer\PhpRenderer::render: Unable to render template "layout/user"; resolver could not resolve to a file
+
+2016-10-21T15:33:56+05:30
+                    ERR (3): Zend\View\Renderer\PhpRenderer::render: Unable to render template "layout/user"; resolver could not resolve to a file
+
+2016-10-21T15:50:42+05:30
+                    ERR (3): Zend\ServiceManager\ServiceManager::get was unable to fetch or create an instance for Admin\Authentication\Service
+
+2016-10-21T15:50:44+05:30
+                    ERR (3): Zend\ServiceManager\ServiceManager::get was unable to fetch or create an instance for Admin\Authentication\Service
+
+2016-10-21T15:51:53+05:30
+                    ERR (3): Zend\ServiceManager\ServiceManager::get was unable to fetch or create an instance for Admin\Authentication\Service
+
+2016-10-21T15:51:55+05:30
+                    ERR (3): Zend\ServiceManager\ServiceManager::get was unable to fetch or create an instance for Admin\Authentication\Service
+
+2016-10-21T15:52:45+05:30
+                    ERR (3): Zend\ServiceManager\ServiceManager::get was unable to fetch or create an instance for Admin\Authentication\Service
+
+2016-10-21T15:53:34+05:30
+                    ERR (3): Call to undefined method Login\Module::redirect() in /var/www/zf2app/module/Login/Module.php line 80
+
+2016-10-21T15:54:38+05:30
+                    ERR (3): Call to undefined method Login\Module::redirect() in /var/www/zf2app/module/Login/Module.php line 80
+
+2016-10-21T15:59:56+05:30
+                    ERR (3): Call to undefined method Login\Module::redirect() in /var/www/zf2app/module/Login/Module.php line 80
+
+2016-10-21T15:59:58+05:30
+                    ERR (3): Call to undefined method Login\Module::redirect() in /var/www/zf2app/module/Login/Module.php line 80
+
+2016-10-21T16:48:49+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:48:51+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:52:28+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:52:30+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:52:45+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:52:54+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:53:45+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T16:55:06+05:30
+                    ERR (3): Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in /var/www/zf2app/module/Application/src/Application/Controller/IndexController.php line 19
+
+2016-10-21T16:55:30+05:30
+                    ERR (3): safdsfsd in /var/www/zf2app/module/Application/src/Application/Controller/IndexController.php line 19
+
+2016-10-21T17:05:50+05:30
+                    ERR (3): Route with name "menu" not found
+
+2016-10-21T17:05:52+05:30
+                    ERR (3): Route with name "menu" not found
+

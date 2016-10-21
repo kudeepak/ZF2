@@ -1,0 +1,23 @@
+<div class="row">
+ <?php
+$form->setAttribute('action', $this->url('login', array(
+    'action' => 'auth/authenticate'
+)));
+$form->prepare();
+if ($this->messages) {
+    echo '<ul>';
+    foreach ($this->messages as $message) {
+        echo '<li>' . $message . '</li>';
+    }
+    echo '</ul>';
+}
+
+echo $this->form()->openTag($form);
+//echo $this->formCollection($form);
+echo $this->formRow($form->get('username'));
+echo $this->formRow($form->get('password'));
+echo $this->formRow($form->get('rememberme'));
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+?>
+</div>
