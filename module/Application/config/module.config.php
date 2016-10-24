@@ -100,7 +100,9 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            'Application\Controller\Menu' => 'Application\Controller\MenuController'
+            'Application\Controller\Menu' => 'Application\Controller\MenuController',
+            'Application\Controller\Custom' => 'Application\Controller\CustomController',
+            'Application\Controller\Dashboard' => 'Application\Controller\DashboardController'
         ),
     ),
     'view_manager' => array(
@@ -111,6 +113,7 @@ return array(
         'exception_template'       => 'error/index',
         'template_map' => array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/custom'           => __DIR__ . '/../view/layout/custom.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',

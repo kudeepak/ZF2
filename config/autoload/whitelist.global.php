@@ -1,6 +1,8 @@
 <?php
 return array(
     'whitelist_url' => array(
-        'login',        
+        'login',
+        'application',
+        'application/custom',
     )
 );

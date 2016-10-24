@@ -10,4 +10,12 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function someAction() {
+        
+        $viewModel = new ViewModel();
+        $viewModel->setTemplate('layout/custom');
+    
+        return $viewModel;
+    }
 }

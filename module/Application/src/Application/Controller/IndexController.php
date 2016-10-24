@@ -15,8 +15,8 @@ use Zend\View\Model\ViewModel;
 class IndexController extends AbstractActionController
 {
     public function indexAction()
-    {
-        //throw new \Exception('safdsfsd');
+    {        
+        
         return new ViewModel();
     }
 }

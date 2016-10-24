@@ -15,6 +15,7 @@ class Module
 
     public function onBootstrap(MvcEvent $e)
     {
+       
         $eventManager = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
@@ -41,6 +42,7 @@ class Module
 
     public function initSession($config)
     {
+        
         $sessionConfig = new SessionConfig();
         $sessionConfig->setOptions($config['session']);
         $sessionManager = new SessionManager($sessionConfig);
@@ -78,6 +80,7 @@ class Module
         return array(
             'factories' => array(
                 'Zend\Log' => function ($sm) {
+                    
                     $fileName = 'log_' . date('m-d-Y') . '.txt';
                     $log = new Logger();
                     $writer = new LogWriterStream('./data/logs/' . $fileName);
