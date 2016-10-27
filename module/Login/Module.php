@@ -41,6 +41,16 @@ class Module implements AutoloaderProviderInterface
             
             // User is authenticated
             if ($auth->hasIdentity()) {
+                $serviceManager = $e->getApplication()
+                    ->getServiceManager();
+                $arPermited = $serviceManager->get('UserPermission')->getUserRoute();
+                if (! in_array($name, $arPermited)) {
+                    $response = $e->getResponse();
+                    $response->getHeaders()
+                        ->addHeaderLine('Location', '/403');
+                    $response->setStatusCode(403);
+                    return $response;
+                }
                 return;
             }
             
@@ -52,11 +62,11 @@ class Module implements AutoloaderProviderInterface
             
             $response = $e->getResponse();
             $response->getHeaders()
-                ->addHeaderLine('Location', $url);            
+                ->addHeaderLine('Location', $url);
             $response->setStatusCode(302);
             
             return $response;
-        }, -100);
+        }, - 100);
     }
 
     public function getConfig()
@@ -76,27 +86,30 @@ class Module implements AutoloaderProviderInterface
     }
 
     public function getServiceConfig()
-    {   
+    {
         return array(
             'factories' => array(
                 'Login\Model\AuthStorage' => function ($sm) {
                     return new \Login\Model\AuthStorage('zfs_login');
                 },
                 'AuthService' => function ($sm) {
-                   
+                    
                     $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
                     $dbTableAuthAdapter = new DbTableAuthAdapter($dbAdapter, 'user', 'username', 'password', 'MD5(?)');
                     $authService = new AuthenticationService();
                     $authService->setAdapter($dbTableAuthAdapter);
                     $authService->setStorage($sm->get('Login\Model\AuthStorage'));
                     return $authService;
+                },
+                'UserPermission' => function ($sm) {
+                    return array();
                 }
             )
         );
     }
 
     public function init(ModuleManager $manager)
-    {  
+    {
         $events = $manager->getEventManager();
         $sharedEvents = $events->getSharedManager();
         $sharedEvents->attach(__NAMESPACE__, 'dispatch', function ($e) {
